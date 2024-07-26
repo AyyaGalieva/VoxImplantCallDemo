@@ -9,21 +9,64 @@
 /* Begin PBXBuildFile section */
 		27D856052C53A8B300AB6D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856042C53A8B300AB6D8F /* AppDelegate.swift */; };
 		27D856072C53A8B300AB6D8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856062C53A8B300AB6D8F /* SceneDelegate.swift */; };
-		27D856092C53A8B300AB6D8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856082C53A8B300AB6D8F /* ViewController.swift */; };
+		27D856092C53A8B300AB6D8F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856082C53A8B300AB6D8F /* MainViewController.swift */; };
 		27D8560C2C53A8B300AB6D8F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 27D8560B2C53A8B300AB6D8F /* Base */; };
 		27D8560E2C53A8B400AB6D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D8560D2C53A8B400AB6D8F /* Assets.xcassets */; };
 		27D856112C53A8B400AB6D8F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 27D856102C53A8B400AB6D8F /* Base */; };
+		27D856202C53A9D800AB6D8F /* VoipCallService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856192C53A9D800AB6D8F /* VoipCallService.swift */; };
+		27D856212C53A9D800AB6D8F /* VoxImplantAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8561A2C53A9D800AB6D8F /* VoxImplantAuthService.swift */; };
+		27D856222C53A9D800AB6D8F /* VoxImplantCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8561B2C53A9D800AB6D8F /* VoxImplantCallManager.swift */; };
+		27D856232C53A9D800AB6D8F /* VoxImplantError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8561C2C53A9D800AB6D8F /* VoxImplantError.swift */; };
+		27D856242C53A9D800AB6D8F /* VoxImplantToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8561D2C53A9D800AB6D8F /* VoxImplantToken.swift */; };
+		27D856592C53AA1800AB6D8F /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856302C53AA1800AB6D8F /* Assembly.swift */; };
+		27D856652C53AA1800AB6D8F /* ConfigurableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8563F2C53AA1800AB6D8F /* ConfigurableButton.swift */; };
+		27D856662C53AA1800AB6D8F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856402C53AA1800AB6D8F /* Extensions.swift */; };
+		27D856672C53AA1800AB6D8F /* HighlightedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856412C53AA1800AB6D8F /* HighlightedButton.swift */; };
+		27D8566E2C53AA1800AB6D8F /* DomainUIDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8564A2C53AA1800AB6D8F /* DomainUIDGenerator.swift */; };
+		27D8566F2C53AA1800AB6D8F /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8564B2C53AA1800AB6D8F /* RepeatingTimer.swift */; };
+		27D856702C53AA1800AB6D8F /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8564D2C53AA1800AB6D8F /* Properties.swift */; };
+		27D856732C53AA1800AB6D8F /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856512C53AA1800AB6D8F /* Action.swift */; };
+		27D856742C53AA1800AB6D8F /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856522C53AA1800AB6D8F /* Application.swift */; };
+		27D856752C53AA1800AB6D8F /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856532C53AA1800AB6D8F /* DeviceInfo.swift */; };
+		27D856772C53AA1800AB6D8F /* UserDefaultsPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856552C53AA1800AB6D8F /* UserDefaultsPropertyWrapper.swift */; };
+		27D8567F2C53AAEF00AB6D8F /* CallAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856792C53AAEF00AB6D8F /* CallAssembly.swift */; };
+		27D856802C53AAEF00AB6D8F /* CallPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8567A2C53AAEF00AB6D8F /* CallPresenter.swift */; };
+		27D856832C53AAEF00AB6D8F /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8567D2C53AAEF00AB6D8F /* CallViewController.swift */; };
+		27D8568B2C53AB5E00AB6D8F /* VoximplantSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 27D8568A2C53AB5E00AB6D8F /* VoximplantSDK */; };
+		27D8568E2C53ABAD00AB6D8F /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 27D8568D2C53ABAD00AB6D8F /* SwiftKeychainWrapper */; };
+		27D856942C53B55B00AB6D8F /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 27D856932C53B55B00AB6D8F /* Logging */; };
+		27D856A12C53C93000AB6D8F /* UserDesaultStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D856A02C53C93000AB6D8F /* UserDesaultStorageKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27D856012C53A8B300AB6D8F /* VoxImplantCallDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoxImplantCallDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D856042C53A8B300AB6D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27D856062C53A8B300AB6D8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27D856082C53A8B300AB6D8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27D856082C53A8B300AB6D8F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		27D8560B2C53A8B300AB6D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27D8560D2C53A8B400AB6D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27D856102C53A8B400AB6D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27D856122C53A8B400AB6D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D856192C53A9D800AB6D8F /* VoipCallService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoipCallService.swift; sourceTree = "<group>"; };
+		27D8561A2C53A9D800AB6D8F /* VoxImplantAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoxImplantAuthService.swift; sourceTree = "<group>"; };
+		27D8561B2C53A9D800AB6D8F /* VoxImplantCallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoxImplantCallManager.swift; sourceTree = "<group>"; };
+		27D8561C2C53A9D800AB6D8F /* VoxImplantError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoxImplantError.swift; sourceTree = "<group>"; };
+		27D8561D2C53A9D800AB6D8F /* VoxImplantToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoxImplantToken.swift; sourceTree = "<group>"; };
+		27D856302C53AA1800AB6D8F /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		27D8563F2C53AA1800AB6D8F /* ConfigurableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableButton.swift; sourceTree = "<group>"; };
+		27D856402C53AA1800AB6D8F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		27D856412C53AA1800AB6D8F /* HighlightedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightedButton.swift; sourceTree = "<group>"; };
+		27D8564A2C53AA1800AB6D8F /* DomainUIDGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainUIDGenerator.swift; sourceTree = "<group>"; };
+		27D8564B2C53AA1800AB6D8F /* RepeatingTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		27D8564D2C53AA1800AB6D8F /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		27D856512C53AA1800AB6D8F /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		27D856522C53AA1800AB6D8F /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		27D856532C53AA1800AB6D8F /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		27D856552C53AA1800AB6D8F /* UserDefaultsPropertyWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsPropertyWrapper.swift; sourceTree = "<group>"; };
+		27D856792C53AAEF00AB6D8F /* CallAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallAssembly.swift; sourceTree = "<group>"; };
+		27D8567A2C53AAEF00AB6D8F /* CallPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallPresenter.swift; sourceTree = "<group>"; };
+		27D8567D2C53AAEF00AB6D8F /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		27D856A02C53C93000AB6D8F /* UserDesaultStorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDesaultStorageKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D856942C53B55B00AB6D8F /* Logging in Frameworks */,
+				27D8568B2C53AB5E00AB6D8F /* VoximplantSDK in Frameworks */,
+				27D8568E2C53ABAD00AB6D8F /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +102,91 @@
 		27D856032C53A8B300AB6D8F /* VoxImplantCallDemo */ = {
 			isa = PBXGroup;
 			children = (
+				27D8567E2C53AAEF00AB6D8F /* Call */,
+				27D856582C53AA1800AB6D8F /* Shared */,
+				27D8561E2C53A9D800AB6D8F /* Services */,
 				27D856042C53A8B300AB6D8F /* AppDelegate.swift */,
 				27D856062C53A8B300AB6D8F /* SceneDelegate.swift */,
-				27D856082C53A8B300AB6D8F /* ViewController.swift */,
+				27D856082C53A8B300AB6D8F /* MainViewController.swift */,
 				27D8560A2C53A8B300AB6D8F /* Main.storyboard */,
 				27D8560D2C53A8B400AB6D8F /* Assets.xcassets */,
 				27D8560F2C53A8B400AB6D8F /* LaunchScreen.storyboard */,
 				27D856122C53A8B400AB6D8F /* Info.plist */,
 			);
 			path = VoxImplantCallDemo;
+			sourceTree = "<group>";
+		};
+		27D8561E2C53A9D800AB6D8F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27D856192C53A9D800AB6D8F /* VoipCallService.swift */,
+				27D8561A2C53A9D800AB6D8F /* VoxImplantAuthService.swift */,
+				27D8561B2C53A9D800AB6D8F /* VoxImplantCallManager.swift */,
+				27D8561C2C53A9D800AB6D8F /* VoxImplantError.swift */,
+				27D8561D2C53A9D800AB6D8F /* VoxImplantToken.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		27D856422C53AA1800AB6D8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27D8563F2C53AA1800AB6D8F /* ConfigurableButton.swift */,
+				27D856412C53AA1800AB6D8F /* HighlightedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27D8564C2C53AA1800AB6D8F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				27D8564A2C53AA1800AB6D8F /* DomainUIDGenerator.swift */,
+				27D8564B2C53AA1800AB6D8F /* RepeatingTimer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		27D856562C53AA1800AB6D8F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				27D856402C53AA1800AB6D8F /* Extensions.swift */,
+				27D8564D2C53AA1800AB6D8F /* Properties.swift */,
+				27D8564C2C53AA1800AB6D8F /* Helpers */,
+				27D856512C53AA1800AB6D8F /* Action.swift */,
+				27D856522C53AA1800AB6D8F /* Application.swift */,
+				27D856532C53AA1800AB6D8F /* DeviceInfo.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		27D856582C53AA1800AB6D8F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				27D856302C53AA1800AB6D8F /* Assembly.swift */,
+				27D8569F2C53C91600AB6D8F /* UserDefault */,
+				27D856422C53AA1800AB6D8F /* Views */,
+				27D856562C53AA1800AB6D8F /* Utils */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		27D8567E2C53AAEF00AB6D8F /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				27D856792C53AAEF00AB6D8F /* CallAssembly.swift */,
+				27D8567A2C53AAEF00AB6D8F /* CallPresenter.swift */,
+				27D8567D2C53AAEF00AB6D8F /* CallViewController.swift */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		27D8569F2C53C91600AB6D8F /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				27D856A02C53C93000AB6D8F /* UserDesaultStorageKeys.swift */,
+				27D856552C53AA1800AB6D8F /* UserDefaultsPropertyWrapper.swift */,
+			);
+			path = UserDefault;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +205,11 @@
 			dependencies = (
 			);
 			name = VoxImplantCallDemo;
+			packageProductDependencies = (
+				27D8568A2C53AB5E00AB6D8F /* VoximplantSDK */,
+				27D8568D2C53ABAD00AB6D8F /* SwiftKeychainWrapper */,
+				27D856932C53B55B00AB6D8F /* Logging */,
+			);
 			productName = VoxImplantCallDemo;
 			productReference = 27D856012C53A8B300AB6D8F /* VoxImplantCallDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +238,11 @@
 				Base,
 			);
 			mainGroup = 27D855F82C53A8B300AB6D8F;
+			packageReferences = (
+				27D856892C53AB5E00AB6D8F /* XCRemoteSwiftPackageReference "ios-sdk-releases" */,
+				27D8568C2C53ABAD00AB6D8F /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				27D856922C53B55B00AB6D8F /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
 			productRefGroup = 27D856022C53A8B300AB6D8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +270,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27D856092C53A8B300AB6D8F /* ViewController.swift in Sources */,
+				27D856802C53AAEF00AB6D8F /* CallPresenter.swift in Sources */,
+				27D856702C53AA1800AB6D8F /* Properties.swift in Sources */,
+				27D856A12C53C93000AB6D8F /* UserDesaultStorageKeys.swift in Sources */,
+				27D856592C53AA1800AB6D8F /* Assembly.swift in Sources */,
+				27D856092C53A8B300AB6D8F /* MainViewController.swift in Sources */,
 				27D856052C53A8B300AB6D8F /* AppDelegate.swift in Sources */,
+				27D8566E2C53AA1800AB6D8F /* DomainUIDGenerator.swift in Sources */,
+				27D856222C53A9D800AB6D8F /* VoxImplantCallManager.swift in Sources */,
+				27D856752C53AA1800AB6D8F /* DeviceInfo.swift in Sources */,
+				27D856202C53A9D800AB6D8F /* VoipCallService.swift in Sources */,
+				27D856652C53AA1800AB6D8F /* ConfigurableButton.swift in Sources */,
+				27D856772C53AA1800AB6D8F /* UserDefaultsPropertyWrapper.swift in Sources */,
+				27D856232C53A9D800AB6D8F /* VoxImplantError.swift in Sources */,
+				27D856672C53AA1800AB6D8F /* HighlightedButton.swift in Sources */,
 				27D856072C53A8B300AB6D8F /* SceneDelegate.swift in Sources */,
+				27D856732C53AA1800AB6D8F /* Action.swift in Sources */,
+				27D856212C53A9D800AB6D8F /* VoxImplantAuthService.swift in Sources */,
+				27D856742C53AA1800AB6D8F /* Application.swift in Sources */,
+				27D8566F2C53AA1800AB6D8F /* RepeatingTimer.swift in Sources */,
+				27D856242C53A9D800AB6D8F /* VoxImplantToken.swift in Sources */,
+				27D8567F2C53AAEF00AB6D8F /* CallAssembly.swift in Sources */,
+				27D856832C53AAEF00AB6D8F /* CallViewController.swift in Sources */,
+				27D856662C53AA1800AB6D8F /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +515,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27D856892C53AB5E00AB6D8F /* XCRemoteSwiftPackageReference "ios-sdk-releases" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/voximplant/ios-sdk-releases";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.53.0;
+			};
+		};
+		27D8568C2C53ABAD00AB6D8F /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		27D856922C53B55B00AB6D8F /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27D8568A2C53AB5E00AB6D8F /* VoximplantSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27D856892C53AB5E00AB6D8F /* XCRemoteSwiftPackageReference "ios-sdk-releases" */;
+			productName = VoximplantSDK;
+		};
+		27D8568D2C53ABAD00AB6D8F /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27D8568C2C53ABAD00AB6D8F /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		27D856932C53B55B00AB6D8F /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27D856922C53B55B00AB6D8F /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27D855F92C53A8B300AB6D8F /* Project object */;
 }

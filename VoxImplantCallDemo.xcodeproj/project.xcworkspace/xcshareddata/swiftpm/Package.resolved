@@ -1,0 +1,33 @@
+{
+  "originHash" : "ac7285bb8bedc5489e71cb1be2a486a617208cc8571a86ae0a86a5bcbb9bc281",
+  "pins" : [
+    {
+      "identity" : "ios-sdk-releases",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/voximplant/ios-sdk-releases",
+      "state" : {
+        "revision" : "ba5ce2864abeace12d7a22a7b8a91f0f80f2d644",
+        "version" : "2.53.0"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log",
+      "state" : {
+        "revision" : "9cb486020ebf03bfa5b5df985387a14a98744537",
+        "version" : "1.6.1"
+      }
+    },
+    {
+      "identity" : "swiftkeychainwrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jrendel/SwiftKeychainWrapper",
+      "state" : {
+        "revision" : "185a3165346a03767101c4f62e9a545a0fe0530f",
+        "version" : "4.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
